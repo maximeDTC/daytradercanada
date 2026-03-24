@@ -1,147 +1,451 @@
 <!DOCTYPE html>
-<html lang="fr" class="scroll-smooth">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Présentation Officielle | Day Trader Canada - France</title>
+    <title>Day Trader Canada - Devenez Indépendant</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        :root {
-            --dtc-blue: #003366;
-            --dtc-green: #28a745;
-            --dtc-orange: #FF6600;
-        }
-        .bg-dtc-blue { background-color: var(--dtc-blue); }
-        .text-dtc-blue { color: var(--dtc-blue); }
-        .bg-dtc-green { background-color: var(--dtc-green); }
-        .text-dtc-green { color: var(--dtc-green); }
-        .border-dtc-green { border-color: var(--dtc-green); }
-        .dtc-shadow { box-shadow: 0 10px 30px -10px rgba(0, 51, 102, 0.2); }
+        .dtc-blue { color: #01375B; }
+        .bg-dtc-blue { background-color: #01375B; }
+        .dtc-green { color: #8CC63F; }
+        .bg-dtc-green { background-color: #8CC63F; }
+        .border-dtc-green { border-color: #8CC63F; }
+        .dtc-shadow { box-shadow: 0 4px 6px -1px rgba(1, 55, 91, 0.1), 0 2px 4px -1px rgba(1, 55, 91, 0.06); }
     </style>
 </head>
-<body class="bg-gray-50 font-sans text-gray-900 antialiased">
+<body class="font-sans text-gray-800 antialiased bg-gray-50">
 
-    <nav class="bg-dtc-blue p-4 shadow-xl sticky top-0 z-50 border-b-2 border-dtc-green">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <img src="logo.png" alt="Logo DTC" class="h-12 w-auto">
-            <div class="hidden md:flex space-x-6 text-white font-medium text-sm uppercase tracking-wider">
-                <a href="#vision" class="hover:text-dtc-green transition">Vision</a>
-                <a href="#formation" class="hover:text-dtc-green transition">Formations</a>
-                <a href="#accompagnement" class="hover:text-dtc-green transition">Accompagnement</a>
-                <a href="#temoignages" class="hover:text-dtc-green transition">Résultats</a>
-            </div>
-            <div class="bg-dtc-green text-white px-5 py-2 rounded-full font-bold text-sm shadow-lg">Responsable France</div>
-        </div>
-    </nav>
-
-    <header id="vision" class="py-24 px-6 text-center bg-white">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-5xl md:text-6xl font-extrabold text-dtc-blue mb-6 tracking-tight italic">
-                L'Excellence du Trading Québécois arrive en <span class="text-dtc-green">France</span>
-            </h1>
-            <p class="text-2xl text-gray-600 mb-10 leading-relaxed font-light">
-                Maîtrisez les marchés US avec la méthodologie de Day Trader Canada. 
-                Une approche institutionnelle pour une indépendance totale.
-            </p>
-            <div class="inline-flex items-center gap-4 bg-gray-100 p-4 rounded-2xl border border-gray-200 shadow-inner">
-                <span class="text-dtc-blue font-bold">Présent au Salon du Trading à Paris</span>
-                <div class="h-6 w-px bg-gray-300"></div>
-                <span class="text-dtc-green font-extrabold text-xl">TOUS LES ANS</span>
-            </div>
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold dtc-blue">DAY TRADER CANADA</div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#programme" class="text-gray-600 hover:text-[#8CC63F] font-medium">Le Programme</a>
+                <a href="#temoignages" class="text-gray-600 hover:text-[#8CC63F] font-medium">Témoignages</a>
+                <a href="#tarifs" class="text-gray-600 hover:text-[#8CC63F] font-medium">Tarifs</a>
+            </nav>
+            <a href="#tarifs" class="bg-dtc-green text-white px-6 py-2 rounded-full font-bold hover:bg-opacity-90 transition duration-300">
+                Rejoindre maintenant
+            </a>
         </div>
     </header>
 
-    <section id="formation" class="py-20 px-6 bg-gray-50">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-center text-dtc-blue mb-16 border-b-4 border-dtc-green inline-block pb-2">Le Savoir : Nos Formations e-Learning</h2>
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="bg-white p-10 rounded-3xl dtc-shadow border border-gray-100">
-                    <h3 class="text-2xl font-bold text-dtc-blue mb-4">Programme Élite <span class="text-dtc-green">Actions</span></h3>
-                    <p class="text-gray-600 mb-6 italic">5 Cours inclus • NYSE & NASDAQ</p>
-                    <ul class="space-y-3 text-sm font-medium text-gray-700">
-                        <li>✅ Stratégies de Volume & Tape Reading</li>
-                        <li>✅ Analyse Technique & Fondamentale</li>
-                        <li>✅ Utilisation de Trader Workstation (IBKR)</li>
-                    </ul>
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-[#01375B] to-[#01243d] text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                Prenez le contrôle de votre <span class="text-[#8CC63F]">Avenir Financier</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto text-gray-200">
+                La méthode concrète et éprouvée pour générer des revenus réguliers sur les marchés boursiers, même en partant de zéro.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#tarifs" class="bg-[#8CC63F] text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-opacity-90 transition duration-300 w-full sm:w-auto shadow-lg">
+                    Découvrir le programme
+                </a>
+                <a href="#video-presentation" class="flex items-center gap-2 text-white hover:text-[#8CC63F] transition font-medium py-4 px-6 w-full sm:w-auto justify-center">
+                    <i class="fa-solid fa-circle-play text-2xl"></i> Voir la présentation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Logos -->
+    <section class="py-8 bg-white border-b border-gray-100">
+        <div class="container mx-auto px-4">
+            <p class="text-center text-gray-400 text-sm font-semibold uppercase tracking-wider mb-6">Ils parlent de nous</p>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale">
+                <!-- Replace with actual logo placeholders -->
+                <div class="text-xl font-bold font-serif">Forbes</div>
+                <div class="text-xl font-bold font-serif">Les Echos</div>
+                <div class="text-xl font-bold font-serif">BFM Business</div>
+                <div class="text-xl font-bold font-serif">Le Figaro</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem / Agitation -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 dtc-blue">
+                Vous sentez-vous bloqué dans cette situation ?
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="text-[#e74c3c] text-4xl mb-4"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <h3 class="text-xl font-bold mb-3">L'inflation ronge votre épargne</h3>
+                    <p class="text-gray-600">Vos économies sur votre Livret A perdent de la valeur chaque jour face à la hausse du coût de la vie.</p>
                 </div>
-                <div class="bg-white p-10 rounded-3xl dtc-shadow border border-gray-100">
-                    <h3 class="text-2xl font-bold text-dtc-blue mb-4">Programme Élite <span class="text-dtc-green">Options</span></h3>
-                    <p class="text-gray-600 mb-6 italic">5 Cours inclus • Rendement & Risque</p>
-                    <ul class="space-y-3 text-sm font-medium text-gray-700">
-                        <li>✅ Mécanismes des contrats dérivés</li>
-                        <li>✅ Stratégies de couverture professionnelles</li>
-                        <li>✅ Maximisation du rendement sur portefeuille</li>
-                    </ul>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="text-[#e74c3c] text-4xl mb-4"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Manque de temps et de méthode</h3>
+                    <p class="text-gray-600">Vous avez essayé d'investir, mais sans stratégie claire, vous perdez du temps et de l'argent.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="text-[#e74c3c] text-4xl mb-4"><i class="fa-solid fa-chart-line-down"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Peur de perdre votre capital</h3>
+                    <p class="text-gray-600">Les marchés vous semblent risqués et imprévisibles, vous craignez de faire les mauvaises erreurs.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="text-[#e74c3c] text-4xl mb-4"><i class="fa-solid fa-building-lock"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Dépendance à votre employeur</h3>
+                    <p class="text-gray-600">Votre seule source de revenus est votre salaire, ce qui vous prive d'une véritable liberté financière et géographique.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="accompagnement" class="py-20 bg-dtc-blue text-white px-6">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+    <!-- Solution / The Program -->
+    <section id="programme" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6 dtc-blue">La Solution : La Méthode Day Trader Canada</h2>
+                <p class="text-lg text-gray-600">Un écosystème complet conçu pour vous transformer d'investisseur débutant à trader indépendant et rentable, étape par étape.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Pillar 1 -->
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-graduation-cap text-3xl dtc-blue"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Formation Intensive</h3>
+                    <p class="text-gray-600">Accédez à plus de 50 heures de modules vidéo, couvrant de l'analyse technique à la psychologie des marchés. Une pédagogie claire, sans jargon inutile.</p>
+                </div>
+                <!-- Pillar 2 -->
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 mx-auto bg-green-50 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-users-gear text-3xl dtc-green"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Coaching & Mentoring</h3>
+                    <p class="text-gray-600">Vous n'êtes jamais seul. Sessions de coaching de groupe hebdomadaires, corrections d'analyses et accès direct à nos traders expérimentés.</p>
+                </div>
+                <!-- Pillar 3 -->
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-shield-halved text-3xl dtc-blue"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Outils & Signaux</h3>
+                    <p class="text-gray-600">Profitez de nos indicateurs propriétaires, de scanners de marché exclusifs et de nos plans de trading partagés en temps réel chaque matin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inside the Program (Features) -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 dtc-blue">Ce que vous obtenez concrètement</h2>
+            
+            <div class="space-y-6">
+                <!-- Feature item -->
+                <div class="flex items-start bg-white p-6 rounded-xl shadow-sm">
+                    <div class="text-[#8CC63F] mt-1 mr-4 text-xl"><i class="fa-solid fa-check-circle"></i></div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Stratégie "Alpha" complète</h4>
+                        <p class="text-gray-600">Notre stratégie phare, expliquée de A à Z. Points d'entrée précis, gestion du risque chirurgicale et sécurisation des profits. Applicable sur Actions, Forex et Crypto.</p>
+                    </div>
+                </div>
+                <!-- Feature item -->
+                <div class="flex items-start bg-white p-6 rounded-xl shadow-sm">
+                    <div class="text-[#8CC63F] mt-1 mr-4 text-xl"><i class="fa-solid fa-check-circle"></i></div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Accès à vie au "Trading Floor" virtuel</h4>
+                        <p class="text-gray-600">Rejoignez notre communauté privée Discord. Échangez avec des centaines d'autres étudiants et nos mentors en direct tous les jours.</p>
+                    </div>
+                </div>
+                <!-- Feature item -->
+                <div class="flex items-start bg-white p-6 rounded-xl shadow-sm">
+                    <div class="text-[#8CC63F] mt-1 mr-4 text-xl"><i class="fa-solid fa-check-circle"></i></div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Live Trading Hebdomadaire</h4>
+                        <p class="text-gray-600">Regardez par-dessus notre épaule. Nous tradons en direct devant vous pour que vous puissiez voir l'application de la théorie en conditions réelles.</p>
+                    </div>
+                </div>
+                 <!-- Feature item -->
+                 <div class="flex items-start bg-white p-6 rounded-xl shadow-sm">
+                    <div class="text-[#8CC63F] mt-1 mr-4 text-xl"><i class="fa-solid fa-check-circle"></i></div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Mises à jour gratuites</h4>
+                        <p class="text-gray-600">Les marchés évoluent, notre formation aussi. Vous avez accès à toutes les futures mises à jour du programme sans frais supplémentaires.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="temoignages" class="py-20 bg-[#01375B] text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Ils ont transformé leur vie financière</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-sm">
+                    <div class="flex text-[#8CC63F] mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-200 mb-6 italic">"J'ai commencé de zéro il y a 8 mois. Aujourd'hui, je génère un complément de revenu régulier qui me permet de préparer sereinement mon passage à temps partiel. La pédagogie est exceptionnelle."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-400 rounded-full mr-4"></div> <!-- Placeholder for avatar -->
+                        <div>
+                            <div class="font-bold">Thomas D.</div>
+                            <div class="text-sm text-gray-400">Ingénieur, France</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-sm">
+                    <div class="flex text-[#8CC63F] mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-200 mb-6 italic">"Le suivi est incroyable. Dès que j'ai un doute sur une analyse, la communauté ou les mentors m'aident en quelques minutes. C'est ce qui a fait la différence pour moi par rapport aux autres formations."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-400 rounded-full mr-4"></div> <!-- Placeholder for avatar -->
+                        <div>
+                            <div class="font-bold">Sophie L.</div>
+                            <div class="text-sm text-gray-400">Entrepreneure, Québec</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-sm">
+                    <div class="flex text-[#8CC63F] mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-200 mb-6 italic">"Je cherchais une méthode sans promesses miracles. DTC m'a appris la gestion du risque stricte. Mes pertes sont petites, mes gains laissent courir la tendance. Résultat : rentabilité constante depuis 4 mois."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-400 rounded-full mr-4"></div> <!-- Placeholder for avatar -->
+                        <div>
+                            <div class="font-bold">Marc A.</div>
+                            <div class="text-sm text-gray-400">Commerçant, Suisse</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-gray-300">Rejoignez plus de <span class="text-[#8CC63F] font-bold text-xl">2,500</span> étudiants satisfaits.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="tarifs" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6 dtc-blue">Prêt à passer à l'action ?</h2>
+                <p class="text-lg text-gray-600">Choisissez le programme qui correspond à vos objectifs d'investissement.</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-center items-center md:items-stretch gap-8 max-w-5xl mx-auto">
+                
+                <!-- Plan 1 -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 w-full md:w-1/2 flex flex-col relative">
+                    <div class="absolute top-0 right-0 bg-[#8CC63F] text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-xl uppercase tracking-wider">
+                        Populaire
+                    </div>
+                    <h3 class="text-2xl font-bold dtc-blue mb-2">Programme Actions</h3>
+                    <p class="text-gray-500 mb-6">Pour maîtriser le marché des actions et les stratégies swing trading.</p>
+                    
+                    <div class="mb-6">
+                        <span class="text-4xl font-extrabold">3295 €</span>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8 flex-grow">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-[#8CC63F] mt-1 mr-3"></i> <span>Formation complète Actions (40h+)</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-[#8CC63F] mt-1 mr-3"></i> <span>Stratégies Swing & Day Trading</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-[#8CC63F] mt-1 mr-3"></i> <span>Accès à vie au Discord Privé</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-[#8CC63F] mt-1 mr-3"></i> <span>Coaching de groupe mensuel (6 mois)</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-[#8CC63F] mt-1 mr-3"></i> <span>Scanners de marché exclusifs</span></li>
+                    </ul>
+                    
+                    <a href="#" class="block w-full py-4 text-center rounded-xl font-bold text-white bg-dtc-blue hover:bg-[#01243d] transition duration-300">
+                        Sélectionner Actions
+                    </a>
+                </div>
+
+                <!-- Plan 2 -->
+                <div class="bg-white rounded-2xl shadow-xl border-2 border-[#8CC63F] p-8 w-full md:w-1/2 flex flex-col relative transform md:-translate-y-4">
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#8CC63F] text-white text-sm font-bold px-4 py-1 rounded-full uppercase tracking-wider shadow-md">
+                        Le plus complet
+                    </div>
+                    <h3 class="text-2xl font-bold dtc-blue mb-2 mt-2">Programme Options</h3>
+                    <p class="text-gray-500 mb-6">L'arsenal complet pour tirer profit de toutes les conditions de marché (hausse, baisse, stagnation).</p>
+                    
+                    <div class="mb-6">
+                        <span class="text-4xl font-extrabold">3295 €</span>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8 flex-grow">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-[#8CC63F] mt-1 mr-3"></i> <span class="font-bold">Tout le contenu du Programme Actions</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-[#8CC63F] mt-1 mr-3"></i> <span>Formation Masterclass Options (20h+)</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-[#8CC63F] mt-1 mr-3"></i> <span>Stratégies avancées de couverture et de rente</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-[#8CC63F] mt-1 mr-3"></i> <span>Coaching VIP Hebdomadaire (1 an)</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-[#8CC63F] mt-1 mr-3"></i> <span>Sessions de Live Trading Options</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-[#8CC63F] mt-1 mr-3"></i> <span>Accès direct WhatsApp aux mentors</span></li>
+                    </ul>
+                    
+                    <a href="#" class="block w-full py-4 text-center rounded-xl font-bold text-white bg-[#8CC63F] hover:bg-opacity-90 transition duration-300 shadow-lg shadow-green-500/30">
+                        Rejoindre l'Élite (Options)
+                    </a>
+                </div>
+
+            </div>
+            
+            <div class="mt-12 text-center text-sm text-gray-500 flex flex-col items-center justify-center gap-2">
+                <div class="flex gap-2">
+                    <i class="fa-solid fa-lock text-gray-400"></i> Paiement 100% sécurisé (Stripe/PayPal)
+                </div>
+                <div>Possibilité de paiement en 2x ou 3x sans frais.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4 max-w-3xl text-center">
+            <div class="w-24 h-24 mx-auto mb-6">
+                <!-- SVG Guarantee Badge -->
+                <svg viewBox="0 0 100 100" class="w-full h-full text-[#8CC63F]" fill="currentColor">
+                    <path d="M50,5 C25.147,5 5,25.147 5,50 C5,74.853 25.147,95 50,95 C74.853,95 95,74.853 95,50 C95,25.147 74.853,5 50,5 Z M71.06,41.94 L46.06,66.94 C44.597,68.403 42.678,69.135 40.758,69.135 C38.838,69.135 36.919,68.403 35.456,66.94 L24.83,56.314 C21.901,53.385 21.901,48.636 24.83,45.707 C27.759,42.778 32.508,42.778 35.437,45.707 L40.758,51.028 L60.453,31.333 C63.382,28.404 68.131,28.404 71.06,31.333 C73.989,34.262 73.989,39.011 71.06,41.94 Z"/>
+                </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Garantie "Action-Réaction" 14 Jours</h3>
+            <p class="text-gray-600">Rejoignez le programme aujourd'hui, explorez les modules de la Phase 1, rejoignez le Discord. Si vous estimez que ce programme n'est pas à la hauteur de vos attentes ou ne vous convient pas, envoyez-nous un simple email dans les 14 jours et nous vous remboursons intégralement. Aucun risque pour vous.</p>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-gray-50">
+         <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-12 dtc-blue">Questions Fréquentes</h2>
+            <div class="space-y-4">
+                <!-- FAQ Item -->
+                <div class="bg-white rounded-lg p-6 shadow-sm cursor-pointer border border-gray-100">
+                    <h4 class="text-lg font-bold flex justify-between items-center">
+                        Ai-je besoin de connaissances préalables ?
+                        <i class="fa-solid fa-chevron-down text-[#8CC63F]"></i>
+                    </h4>
+                    <p class="text-gray-600 mt-4">Absolument pas. Le programme est conçu pour prendre un débutant total par la main jusqu'à l'autonomie. La Phase 1 reprend toutes les bases fondamentales.</p>
+                </div>
+                <!-- FAQ Item -->
+                <div class="bg-white rounded-lg p-6 shadow-sm cursor-pointer border border-gray-100">
+                    <h4 class="text-lg font-bold flex justify-between items-center">
+                        Combien de temps dois-je y consacrer par jour ?
+                        <i class="fa-solid fa-chevron-down text-[#8CC63F]"></i>
+                    </h4>
+                    <p class="text-gray-600 mt-4">Pendant la phase d'apprentissage, prévoyez 3 à 5 heures par semaine. Une fois la stratégie maîtrisée (Swing Trading), 30 à 45 minutes par soir suffisent pour analyser et placer vos ordres. Vous n'avez pas besoin de rester devant les écrans toute la journée.</p>
+                </div>
+                 <!-- FAQ Item -->
+                 <div class="bg-white rounded-lg p-6 shadow-sm cursor-pointer border border-gray-100">
+                    <h4 class="text-lg font-bold flex justify-between items-center">
+                        Quel capital de départ faut-il ?
+                        <i class="fa-solid fa-chevron-down text-[#8CC63F]"></i>
+                    </h4>
+                    <p class="text-gray-600 mt-4">Vous pouvez commencer à vous entraîner sur un compte de démonstration gratuit. Pour passer en réel, nous recommandons un minimum de 1000€ à 2000€ pour pouvoir gérer correctement votre risque (money management).</p>
+                </div>
+            </div>
+         </div>
+    </section>
+
+    <!-- New Section: Pack Indépendance Totale (Offre Salon Paris) -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="bg-white rounded-3xl dtc-shadow border-2 border-dtc-green overflow-hidden relative">
+                
+                <!-- Badge -->
+                <div class="absolute top-0 right-0 bg-dtc-blue text-white px-4 py-1 rounded-bl-xl font-bold text-sm tracking-wide z-10 shadow-md">
+                    RE SALON PARIS
+                </div>
+
+                <div class="p-8 md:p-12">
+                    <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+                        
+                        <!-- Icon / Graphic Left -->
+                        <div class="hidden md:flex flex-shrink-0 w-24 h-24 bg-green-50 rounded-full items-center justify-center">
+                            <i class="fa-solid fa-crown text-5xl dtc-green"></i>
+                        </div>
+
+                        <!-- Content Right -->
+                        <div class="flex-1 text-center md:text-left">
+                            <h2 class="text-3xl font-extrabold dtc-blue mb-4 leading-tight">Pack Indépendance Totale</h2>
+                            <p class="text-gray-600 text-lg mb-6">
+                                Profitez d'une opportunité unique avec notre offre spéciale. Accédez à l'intégralité de nos programmes pour accélérer votre parcours vers la liberté financière, à un tarif exclusif !
+                            </p>
+                            
+                            <ul class="space-y-3 mb-8 text-left inline-block md:block">
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fa-solid fa-circle-check dtc-green mr-3 text-xl"></i>
+                                    <span class="font-medium">Programme complet <strong class="dtc-blue">Actions</strong></span>
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fa-solid fa-circle-check dtc-green mr-3 text-xl"></i>
+                                    <span class="font-medium">Programme complet <strong class="dtc-blue">Options</strong></span>
+                                </li>
+                            </ul>
+
+                            <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-6">
+                                <div class="text-center md:text-left">
+                                    <p class="text-sm text-gray-400 line-through mb-1">Prix standard cumulé : 6590 €</p>
+                                    <p class="text-4xl font-black dtc-blue">3995 €</p>
+                                </div>
+                                
+                                <a href="#" class="bg-dtc-green hover:bg-opacity-90 text-white text-lg font-bold py-4 px-8 rounded-xl transition duration-300 shadow-lg shadow-green-500/30 transform hover:-translate-y-1">
+                                    Saisir l'Offre Exclusive
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <!-- Bottom Banner -->
+                <div class="bg-gray-50 border-t border-gray-100 p-4 text-center">
+                    <p class="text-sm text-gray-500 font-medium">
+                        <i class="fa-solid fa-clock mr-2 dtc-green"></i>Offre valable pour une durée limitée. Paiement sécurisé et facilité de paiement disponibles.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#01243d] text-gray-400 py-12 border-t border-gray-800">
+        <div class="container mx-auto px-4 grid md:grid-cols-4 gap-8">
+            <div class="col-span-1 md:col-span-2">
+                <div class="text-2xl font-bold text-white mb-4">DAY TRADER CANADA</div>
+                <p class="mb-4">Notre mission est de démocratiser l'investissement en bourse en fournissant une éducation de haute qualité, transparente et axée sur les résultats réels.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white text-xl transition"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white text-xl transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white text-xl transition"><i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
             <div>
-                <h2 class="text-4xl font-bold mb-8 border-b-4 border-dtc-green inline-block pb-2 tracking-tight">Le Mentorat : Ne tradez plus seul</h2>
-                <p class="text-xl mb-8 opacity-90 leading-relaxed font-light">
-                    La théorie s'apprend, la pratique se transmet. Accédez à notre salle de marché virtuelle pour pratiquer en direct avec les experts québécois.
-                </p>
-                <div class="space-y-4">
-                    <div class="flex items-center gap-4 bg-white/10 p-4 rounded-xl">
-                        <span class="text-2xl">🔥</span>
-                        <p><strong>Sessions Live Quotidiennes</strong> lors de l'ouverture US</p>
-                    </div>
-                    <div class="flex items-center gap-4 bg-white/10 p-4 rounded-xl">
-                        <span class="text-2xl">📅</span>
-                        <p><strong>Plan de Match</strong> et Analyses Pré-Marché</p>
-                    </div>
-                    <div class="flex items-center gap-4 bg-white/10 p-4 rounded-xl">
-                        <span class="text-2xl">💬</span>
-                        <p><strong>Communauté Discord</strong> exclusive et active</p>
-                    </div>
-                </div>
+                <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Liens Utiles</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-white transition">Connexion Espace Membre</a></li>
+                    <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                    <li><a href="#" class="hover:text-white transition">Contactez-nous</a></li>
+                </ul>
             </div>
-            <div class="grid grid-cols-2 gap-4">
-                <img src="t1.png" alt="Succès 1" class="rounded-xl shadow-2xl hover:scale-105 transition duration-300">
-                <img src="t2.png" alt="Succès 2" class="rounded-xl shadow-2xl hover:scale-105 transition duration-300">
-                <img src="t3.png" alt="Succès 3" class="rounded-xl shadow-2xl hover:scale-105 transition duration-300">
-                <img src="t4.png" alt="Succès 4" class="rounded-xl shadow-2xl hover:scale-105 transition duration-300">
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Légal</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-white transition">Conditions Générales de Vente</a></li>
+                    <li><a href="#" class="hover:text-white transition">Politique de Confidentialité</a></li>
+                    <li><a href="#" class="hover:text-white transition">Mentions Légales</a></li>
+                    <li><a href="#" class="hover:text-white transition">Avertissement sur les Risques</a></li>
+                </ul>
             </div>
         </div>
-    </section>
-
-    <section id="closing" class="py-20 bg-white px-6">
-        <div class="max-w-4xl mx-auto border-4 border-dtc-green rounded-3xl p-10 dtc-shadow relative overflow-hidden bg-gray-50/50">
-            <div class="absolute top-0 right-0 bg-dtc-green text-white px-10 py-2 font-bold transform rotate-45 translate-x-10 translate-y-4 shadow-md uppercase text-xs tracking-tighter">
-                Offre Elite France
-            </div>
-            <h2 class="text-4xl font-black text-dtc-blue mb-4">Pack "Indépendance Totale"</h2>
-            <p class="text-xl text-gray-600 mb-8 italic">Le duo stratégique pour dominer tous les scénarios de marché.</p>
-            
-            <div class="grid md:grid-cols-2 gap-8 text-left mb-10">
-                <div class="space-y-4">
-                    <p class="flex items-center text-lg">✅ <span class="ml-3 font-semibold">Formation Actions Elite</span></p>
-                    <p class="flex items-center text-lg">✅ <span class="ml-3 font-semibold">Formation Options Elite</span></p>
-                    <p class="flex items-center text-lg">✅ <span class="ml-3 font-semibold text-dtc-green">Accompagnement OR (12 mois)</span></p>
-                    <p class="flex items-center text-lg">✅ <span class="ml-3 font-semibold">Sessions Live & Discord</span></p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl border-2 border-dashed border-dtc-green text-center dtc-shadow">
-                    <p class="text-sm text-gray-400 line-through mb-1 font-medium italic">Valeur Réelle : 11 589€</p>
-                    <p class="text-5xl font-black text-dtc-blue mb-4 tracking-tighter">7 990€</p>
-                    <div class="bg-dtc-green text-white py-3 px-6 rounded-xl inline-block font-extrabold text-xl animate-pulse shadow-lg">
-                        Soit 10 x 799€ / mois
-                    </div>
-                </div>
-            </div>
-            
-            <div class="bg-blue-50 p-6 rounded-xl text-sm text-dtc-blue italic border-l-4 border-dtc-blue leading-relaxed">
-                <strong>Sécurisation du contenu :</strong> Afin de garantir un accompagnement de haute qualité et de protéger l'expertise de Day Trader Canada, les modules de formation sont débloqués progressivement au rythme de vos mensualités.
-            </div>
+        <div class="container mx-auto px-4 mt-12 pt-8 border-t border-gray-800 text-sm text-center">
+            <p class="mb-2">Avertissement : Le trading comporte des risques. Les performances passées ne garantissent pas les résultats futurs. Vous ne devriez investir que de l'argent que vous pouvez vous permettre de perdre.</p>
+            <p>&copy; 2024 Day Trader Canada. Tous droits réservés.</p>
         </div>
-    </section>
-
-    <footer class="bg-dtc-blue text-white py-12 px-6 text-center text-sm border-t-4 border-dtc-green">
-        <img src="logo.png" alt="DTC Logo" class="h-8 mx-auto mb-6 opacity-80">
-        <p class="opacity-70">&copy; 2026 Day Trader Canada - Responsable Commercial France. <br>
-        Day Trader Canada est présent annuellement au Salon de l'Analyse Technique à Paris.</p>
     </footer>
 
 </body>
