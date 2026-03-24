@@ -13,7 +13,6 @@
                         primary: '#0b1f3b', /* DTC Blue */
                         primaryLight: '#1a365d',
                         accent: '#2b6cb0',
-                        dtcGreen: '#28a745',
                         lightBackground: '#f8fafc',
                         darkText: '#1e293b',
                         grayText: '#475569',
@@ -32,20 +31,100 @@
             background-color: #0b1f3b;
             background-image: radial-gradient(circle at center, #1a365d 0%, #0b1f3b 100%);
         }
+        /* Style pour l'offre qui claque */
         .offer-pulse {
             animation: pulse-border 2s infinite;
         }
         @keyframes pulse-border {
-            0% { border-color: rgba(43, 108, 176, 0.4); box-shadow: 0 0 0 0 rgba(43, 108, 176, 0.4); }
-            70% { border-color: rgba(43, 108, 176, 1); box-shadow: 0 0 0 15px rgba(43, 108, 176, 0); }
-            100% { border-color: rgba(43, 108, 176, 0.4); box-shadow: 0 0 0 0 rgba(43, 108, 176, 0); }
+            0% { box-shadow: 0 0 0 0 rgba(43, 108, 176, 0.4); }
+            70% { box-shadow: 0 0 0 20px rgba(43, 108, 176, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(43, 108, 176, 0); }
         }
     </style>
 </head>
 <body class="bg-lightBackground text-darkText antialiased">
 
-    <nav class="bg-white shadow-md fixed w-full z-50 top-0 border-b border-accent/20">
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
                 <div class="flex-shrink-0 flex items-center">
-                    <img class="
+                    <img class="h-12 w-auto" src="https://www.daytradercanada.com/wp-content/themes/daytrader/public/images/svg/logo.svg" alt="DayTrader Canada">
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#avantage" class="text-grayText hover:text-primary font-medium transition">L'Avantage Français</a>
+                    <a href="#histoire" class="text-grayText hover:text-primary font-medium transition">Notre Histoire</a>
+                    <a href="#equipe" class="text-grayText hover:text-primary font-medium transition">L'Équipe</a>
+                    <a href="#temoignages" class="text-grayText hover:text-primary font-medium transition">Témoignages</a>
+                    <a href="#offres" class="bg-primary text-white px-5 py-2 rounded-md font-semibold hover:bg-primaryLight transition">Voir nos offres</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-pattern pt-32 pb-20 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
+            <span class="text-accent bg-white/10 px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase mb-6">Ouverture du marché français</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                Trader les Marchés Américains <br> <span class="text-blue-300">Depuis la France</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mb-10 font-light">
+                Profitez du décalage horaire idéal pour devenir un investisseur actif sans bouleverser votre quotidien. L'expertise nord-américaine, désormais à votre portée.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#avantage" class="bg-white text-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition shadow-lg">Découvrir l'opportunité</a>
+                <a href="#offres" class="border-2 border-white/30 hover:border-white px-8 py-4 rounded-lg font-bold text-lg transition">Nos Formations</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="avantage" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-gray-100 pb-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Le Privilège du Décalage Horaire</h2>
+                    <p class="text-lg text-grayText mb-6">
+                        Le plus grand avantage de trader le marché américain (NYSE, NASDAQ) depuis la France est l'horaire. La cloche sonne à 9h30 à New York, ce qui correspond à <strong>15h30 à Paris</strong>. Le marché ferme à <strong>22h00</strong> heure française.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-accent mt-1 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span class="text-grayText text-lg"><strong>Conservez votre emploi :</strong> Vous pouvez travailler normalement le matin et trader en fin d'après-midi ou en soirée.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-accent mt-1 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span class="text-grayText text-lg"><strong>Préparation optimale :</strong> Vous avez toute la matinée pour analyser les nouvelles, préparer vos stratégies et vos graphiques avant l'ouverture.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="relative rounded-xl overflow-hidden shadow-2xl">
+                    <div class="bg-primary text-white p-8">
+                        <h3 class="text-2xl font-bold mb-4 text-center">Une Journée Type en France</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between border-b border-white/20 pb-2">
+                                <span class="text-blue-200">Matinée</span>
+                                <span>Activités personnelles / professionnelles</span>
+                            </div>
+                            <div class="flex justify-between border-b border-white/20 pb-2 font-bold text-yellow-400">
+                                <span>15h30</span>
+                                <span>Ouverture des marchés US</span>
+                            </div>
+                            <div class="flex justify-between font-bold text-red-400">
+                                <span>22h00</span>
+                                <span>Clôture des marchés</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="histoire" class="py-20 bg-lightBackground">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Notre Histoire & Approche</h2>
+            <div class="w-24 h-1 bg-accent mx-auto mb-10"></div>
+            <p class="text
